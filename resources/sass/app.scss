@@ -1,0 +1,551 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Sweet alerts 2 css
+@import 'node_modules/sweetalert2/dist/sweetalert2';
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+.bd-example{
+  display: none;
+}
+
+.carousel-caption h5{
+  font-size: 50px;
+  font-weight: 700;
+}
+.carousel-caption {
+text-align:left;
+margin-bottom: 65px;
+font-size: 26px;
+font-weight: bold;
+}
+.test h2{
+  text-align: center;
+}
+.master_soon h2{
+  text-align: center; 
+}
+.hero{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+  }
+.top{
+  background-color: #F6BD5A;
+  padding-bottom: 10px;
+}
+  .body{
+      background-color: #F6BD5A;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+  .text p{
+  display: none;
+  }
+  .com{
+    display: none;
+  }
+  .cards{
+    background-color: #ffff;
+    border-radius: 15px;
+    margin: 10px;
+    text-align: center;
+    grid-template-columns:  repeat(6, 1fr);
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 5px 20px 0 rgba(0, 0, 0, 0.12);
+    padding: 20px 20px;
+    align-items: center;
+  }
+  
+  .master_name h2{
+    font-size: 24px;
+    padding: 10px;
+    font-weight:500;
+  }
+  .info_master{
+    display: grid;
+    grid-template-columns:  repeat(4, 1fr);
+    text-align: center;
+    padding: 10px;
+  }
+  .info_master h3{
+     font-size: 20px;
+  }
+  
+  .calendar{
+    grid-column: 1/3;
+    padding-bottom: 15px;
+  
+  }
+  .location{
+    grid-column: 3/5;
+    padding-bottom: 15px;
+  }
+  .price{
+    grid-column: 1/3;
+    padding-bottom: 15px;
+  }
+  
+  .more_info{
+    grid-column: 3/5;
+    padding-bottom: 15px;
+  }
+  .map{
+  grid-column: 1/-1;
+  padding-bottom: 15px;
+  }
+  .vue-map-container{
+  grid-column: 1/-1;
+  padding-bottom: 15px;
+  // position: relative;
+  // padding-bottom: 100%;
+  // height: 0;
+  // overflow: hidden;
+ 
+  }
+  .vue-map{
+    // height: 0;
+    // overflow: hidden;
+    // padding-bottom: 50%;
+    // padding-top: 30px;
+    // position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0.75rem;
+  }
+  
+  .start{
+    grid-column: 2/4;
+    background-color: #F6BD5A;
+    color: #000000;
+    border-radius: 50px;
+    padding-top: 15px;
+  }
+  .img_dish{
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 5px 20px 0 rgba(0, 0, 0, 0.12);
+  }
+  .dish_name{
+    font-weight:600;
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top:20px;
+  }
+  .left{
+    margin-bottom: 208px;
+   
+  }
+  .button_review{
+    background-color: #5D9BA6;
+    border-radius: 50px;
+    padding: 2px;
+  }
+.write{
+  color: #ffff;
+}
+  li{
+    list-style: none;
+  }
+
+ul{
+  padding-left: 0px;
+}
+.reviews{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #F6BD5A;
+  // background-color: aliceblue;
+}
+
+/****** Style Star Rating Widget *****/
+
+.rating { 
+  width: 150px;
+  margin: auto;
+}
+
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #fff; 
+ float: right; 
+}
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #5D9BA6;  } /* hover previous stars in list */
+
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: rgb(117, 197, 211);  } 
+
+.reviews h3{
+  font-size: 20px;
+  padding-top: 10px;
+}
+.review_line {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+.yellow-border{
+    border: 1px solid #F6BD5A;
+}
+.yellow-border.form-control:focus {
+    border: 1px solid #F6BD5A;
+    box-shadow: 0 0 0 0.2rem rgba(246, 184, 90, .25);
+}
+
+.submit{
+background-color: #5D9BA6;
+border-radius: 50px;
+// padding: 2px;
+padding-left:125px;
+padding-right:125px;
+position: absolute;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.cards_review{
+  background: transparent;
+  box-shadow: none;
+}
+
+.footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+  padding-left: 20px;
+}
+
+
+.footer .social-icons
+{
+  text-align:right
+}
+.footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.follow h4{
+  text-align: center;
+}
+
+@media (max-width:767px)
+{
+  .footer
+  {
+    padding-bottom:0
+  }
+  .footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#f0da18
+}
+.social-icons a.instagram:hover
+{
+  background-color:#f0da18
+}
+
+
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+
+@media screen and (min-width: 500px){
+
+.text{
+  padding: 40px;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+.text p{
+  display: block;
+  }
+
+.hero{
+font-size: 25px;
+}
+.soon{
+  font-size: 30px;
+}
+.reviews_page{
+  padding-left: 50px;
+}
+}
+
+@media screen and (min-width: 1000px){
+  .navbar{
+    position: fixed;
+    z-index: 3;
+    width:100vw;
+  }
+  .bd-example{
+    display: block;
+  }
+  .test{
+    display: none;
+  }
+  .btn-warning:hover{
+    background-color: #f0da18;
+  }
+
+// .carousel-inner{
+//   width: 100%;
+//   max-height: 500px !important;
+// }
+.master_soon h2{
+display: none;  
+}
+.com{
+  display: block;
+  padding-top: 70px;
+  font-style: italic;
+  font-weight: lighter;
+
+}
+  .master_soon{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background-color: #F6BD5A;
+  }
+  .master_soon h2{
+  grid-column: 3/5;
+  text-align: center;
+  }
+
+  .card_soon{
+    grid-column: 1/ 3;
+    grid-row: 2;
+  }
+  .card_soon_two{
+    grid-column: 3/ 5;
+    grid-row: 2;
+  }
+  .card_soon_three{
+    grid-column: 5/ -1;
+    grid-row: 2;
+  }
+  .body{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+.tall{
+  grid-column: 7/ -1;
+  grid-row:1;
+  position: sticky;
+  top: 150px;
+  height: 600px;
+}
+.vue-map-container{
+  height: 300px !important;
+}
+.master_cards{
+  grid-column: 1/6;
+  grid-row: 1;
+}
+.info_dish{
+  display: grid;
+    grid-template-columns:  repeat(4, 1fr);
+    //  height: 300px;
+    //  width: 600px;
+}
+.info_dish:hover{
+  transform: scale3d(1.006, 1.006, 1);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
+}
+.rest_name{
+  grid-column: 1/-1;
+  font-size: 20px;
+  margin-top: 15px;
+  
+}
+.rest_name h4{
+  font-weight: 600;
+}
+.img_dish{
+  grid-column: 1/3;
+  width: 100%;
+}
+
+.info{
+  grid-column: 3/5;
+  grid-row: 2;
+  padding: 15px;
+}
+.copy_dish{
+    line-height: 15pt;
+}
+.reviews{
+  position: relative;
+  background-color: white;
+ 
+}
+.left{
+  margin-bottom: 0;
+  grid-column: 1/6;
+}
+.review-line{
+  display: none;
+}
+.reviews_page{
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+  background-color: #F6BD5A;
+  position: relative;
+  top: 115px;
+  height: 100vh;
+}
+.cards_review{
+  grid-column:6/-1;
+  height: 740px;
+  background-color: #fff;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 5px 20px 0 rgba(0, 0, 0, 0.12);
+  position: sticky;
+  top: 150px;
+  height: 600px;
+}
+.cards_width{
+width: 650px;
+}
+.rating > label { 
+  color: #ddd; 
+}
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } 
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+.button_review:hover{
+  background-color: rgb(124, 182, 192);
+}
+.follow h4{
+position: absolute;
+margin-top: 10px;
+margin-left:100px;
+}
+.footer{
+  position:sticky;
+  padding: 50px 0 21px;
+}
+}

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+img, embed, object, video {
+    max-width: 100%;
+   }
+  
+  html {
+    box-sizing: border-box; }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit; }
+  
+  img {
+    -ms-interpolation-mode: bicubic; }
+  
+  
+  .hidden {
+    display: none; }
+  
+  body
+  {
+    background-color: #F6BD5A;
+  }
